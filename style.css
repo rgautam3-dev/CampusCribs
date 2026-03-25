@@ -1,0 +1,271 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gill Sans, san-serif;
+}
+
+/* BODY BACKGROUND (main page) */
+body {
+    min-height: 100vh;
+    background: radial-gradient(circle at top right, #6b0000, #1a0000);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(circle at top right, #6b0000, #1a0000);
+    color: white;
+    padding: 1rem;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between; /* keeps links on sides */
+    align-items: center; /* vertically center everything */
+    padding: 1rem 0;
+}
+
+/* NAV LINKS */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* CENTERED LOGO */
+.logo img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px; /* space between logo and links */
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px; /* space between logo and links */
+}
+
+/* OPTIONAL LEFT/RIGHT GROUPS */
+.left, .right {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+/* Nav links styling (underneath logo) */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem; /* spacing between links */
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+/* ================= HERO SECTION ================= */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* BADGE */
+.badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.1);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* HEADLINE */
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+/* HIGHLIGHT TEXT */
+.highlight {
+    color: #ff4d6d;
+}
+
+/* SUBTEXT */
+.hero p {
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+/* BUTTON */
+button,
+.cta {
+    background: linear-gradient(90deg, #ff4d6d, #ff1a1a);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover,
+.cta:hover {
+    transform: scale(1.05);
+}
+
+/* TRUST ROW */
+.logos {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* ================= ABOUT PAGE ================= */
+.about-wrapper {
+    height: 100vh;
+    background-color: #970a29; 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    text-align: center;
+    max-width: 700px;
+    padding: 30px;
+    color: white; 
+}
+
+.about-container p {
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+/* ================= CONTACT PAGE ================= */
+body.contact-page {
+    background: #FFF9C4; /* pastel yellow */
+    color: black;
+}
+
+/* TEAM SECTION */
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #800000;
+}
+
+.team-member p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+}
+
+/* LISTING BOXES SECTION */
+.listing-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+    flex-wrap: wrap; /* makes it responsive */
+}
+
+.box {
+    display: block;
+    text-decoration: none;
+    color: white;
+
+    background-color: rgba(255, 255, 255, 0.05); /* softer */
+    border-radius: 12px;
+    padding: 25px;
+    width: 300px;
+    text-align: center;
+
+    box-shadow: none; /* removes harsh box */
+    transition: 0.3s ease;
+}
+
+.box h2 {
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.box:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.listing-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px 12px;
+    margin-top: 10px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 6px;
+}
+
+.info-item span {
+    opacity: 0.9;
+}
+
+
+
+
