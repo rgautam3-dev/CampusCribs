@@ -266,6 +266,31 @@ a {
     opacity: 0.9;
 }
 
+.filter-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filter-container select,
+.filter-container button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+}
+
+.filter-container button {
+    background-color: #ffcc00;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.filter-container button:hover {
+    background-color: #e6b800;
+}
+
 
 
 

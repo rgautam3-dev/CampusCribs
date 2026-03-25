@@ -25,7 +25,38 @@
     <section class="hero">
         <h1>Browse Listings</h1>
         <p>Find your perfect ASU home from available off-campus listings.</p>
+
+        <!-- FILTER DROPDOWN -->
+    <div class="filter-container">
+        <select id="filter">
+           <option value="">Select College</option>
+        <option value="wpc">W. P. Carey School of Business</option>
+        <option value="fulton">Ira A. Fulton Schools of Engineering</option>
+        <option value="herberger">Herberger Institute for Design and the Arts</option>
+        <option value="clas">The College of Liberal Arts and Sciences</option>
+        <option value="watts">Watts College of Public Service and Community Solutions</option>
+        <option value="mlf">Mary Lou Fulton College for Teaching and Learning Innovation</option>
+        <option value="chs">College of Health Solutions</option>
+        <option value="cisa">College of Integrative Sciences and Arts</option>
+        <option value="global">Rob Walton College of Global Futures</option>
+        <option value="barrett">Barrett, The Honors College</option>
+        </select>
+
+        <button onclick="applyFilter()">Submit</button>
+    </div>
     </section>
+
+
+<script>
+function applyFilter() {
+    const value = document.getElementById("filter").value;
+    if (!value) {
+        alert("Please select a college");
+        return;
+    }
+    window.location.href = value + ".html";
+}
+</script>
 
     <!-- LISTING BOXES -->
 
