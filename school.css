@@ -275,6 +275,7 @@
 
 .table-header,
 .table-row {
+  background-color: #f3f4f6;
   display: grid;
   grid-template-columns: 2fr 1.5fr 2fr 1fr;
   padding: 14px 18px;
